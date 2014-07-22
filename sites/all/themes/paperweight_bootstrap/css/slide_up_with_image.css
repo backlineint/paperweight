@@ -1,0 +1,78 @@
+/**
+ * @file
+ * General Slide Up With Image Layout
+ */
+
+body.navbar-is-fixed-top.node-type-slide-up-with-image {
+	padding-top: 50px !important;
+}
+body.node-type-slide-up-with-image, .wrapper {
+	background-color: #ffffff;
+}
+hr {
+	border: 0 !important; /* Get rid of all of these !important rules */
+	margin-bottom: 0 !important;
+	height: 3px !important;
+	color: black;
+	background-color: black;
+}
+hr.show_header {
+	margin-top: 196px;
+	margin-bottom: 0;	
+}
+.field-name-field-header-image img {
+	display: none;
+}
+.header_image {
+	background-size: cover !important;
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+}
+p {
+/*	color: white;
+	opacity: .97;
+	font-family: 'Merriweather', serif; Add somehting here for text style */
+}
+.field-name-field-introduction h3 {
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+.field-name-field-introduction h3 p { /* Maybe look into eliminating the p from this field */
+/*	font-family: 'Abril Fatface', cursive;
+	color: yellow;
+	opacity: .97;	Add something here for text style */
+}
+.field-name-field-inline-image img {
+	width: 100%;
+	height: auto;
+}
+.field-name-field-body-continued {
+	margin-top: 10px;
+}
+.field-name-field-credits {
+	font-style: italic;
+	margin-top: 15px;
+}
+.footer {
+	border: 0 !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) { /* Convert to LESS */
+	hr.show_header {
+		margin-top: 373px;
+	}	
+}
+
+@media (min-width: 992px) { /* Convert this to LESS and use @normal or whatever normal and above is in this case*/
+	.field-name-field-introduction h3 {
+		font-size: 2em;
+		line-height: 1.25em;
+	}
+	p {
+		font-size: 1.2em;
+	}
+	hr.show_header {
+		margin-top: 452px;
+	}
+}

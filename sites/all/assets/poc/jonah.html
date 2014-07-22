@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interview Template POC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700|Open+Sans:300italic,600,400,300' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+body {
+  padding-top: 50px;
+  /*background-color: rgba(0,0,0,.6);*/
+}
+p {
+	color: white;
+}
+h1 {
+	/*color: red;*/
+	color: rgba(255,0,0,0.95);
+}
+strong {
+	font-weight: 600;
+}
+.pullquote {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-style: italic;
+	color: red;
+	text-shadow: 1px 1px 1px white;
+
+}
+.starter-template {
+  /*padding: 40px 15px;*/
+  /*text-align: center;*/
+}
+.navbar-inverse {
+	background-color: rgba(235,73,91,1);
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: black;
+}
+.navbar-brand img {
+	height: 18px;
+}
+#header_title {
+	background-color: rgba(235,73,91,0.95);
+	height: 150px;
+	width: 100%;
+	/*position: fixed; Might want to make this fixed again for larger sizes... */
+	padding-top: 12px;
+}
+#header_title img {
+	margin-left: auto;
+	margin-right: auto;
+	width:250px;
+}
+#header_title p {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.talks {
+	color: black;
+}
+.comics {
+	font-size: 1.5em;
+}
+.hour {
+	font-size: 2.82em;
+	line-height: 1em;
+}
+.red {
+	color: rgba(235,73,91,0.95);
+}
+#header_image {
+	height: 300px; /* Was 450px */	
+	background: #000 url('images/jonahray1.jpeg') no-repeat fixed 50% 200px; /* Was 200 to accomidate for title */
+	background-size: contain;
+}
+#main_article {
+  background-color: rgba(0,0,0,.85);	
+  padding-top:15px;
+}
+#main_article p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.25em;
+}
+/*@media (min-width: 480px) {
+@media (orientation : landscape) { 
+	#header_image {
+		background: #000 url('images/jonahray1.jpeg') no-repeat fixed 50% 25px;
+		background-size: 100%;
+		background-size: contain;
+	}	
+	#header_title {
+		background-color: purple;
+		width: 50% !important;
+	}
+}
+*/
+@media (min-width: 768px) {
+	#header_image {
+		display:none;
+	}
+	#header_title {
+		width: 50%;
+		position: fixed;
+		top: 100px;
+	}
+	html {
+		background: black url('images/jonahray_stretched_adjusted.jpg') no-repeat fixed 55% top;
+		background-size: cover;
+		height: 100%;
+		overflow: hidden;
+	}	
+	body
+	{
+		height:100%;
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+		background-color: rgba(0,0,0,0);
+		padding-top: 0;
+	}
+	.pullquote {
+		width: 51%;
+		float: right;
+		margin: 50px 0;
+		font-size: 3em;
+		text-align: left;
+		padding: 0 50px;
+	}
+	#main_article {
+	background-color: rgba(255, 255, 255, .2);
+	}
+	p {
+	color: white;
+	}
+}
+@media (min-width: 768px)
+and (max-width: 1024px)
+and (orientation : landscape) {
+	html {
+		background: black url('images/jonahray_stretched_adjusted.jpg') no-repeat fixed 110% top;
+		background-size: cover;
+	}
+	#header_title {
+		top: 50px
+	}
+}
+@media (min-width: 992px) {
+	html {
+		background: black url('images/jonahray_stretched.jpg') no-repeat fixed 50% top;
+		background-size: cover;		
+	}	
+	#header_title {
+		left: 50%;
+		height: auto;
+	}
+	#header_title img {
+	 	width: auto;
+	}
+	#header_title p {
+		margin: 0;
+	}
+	#main_article {
+		background-color: transparent;
+		margin-top: 35px;
+		margin-bottom: 35px;
+	} 
+	.talks {
+		font-size: .6em;
+	}
+	.comics {
+		/*width:100%;
+		display:inline-block;*/
+		font-size: .8em;
+	}
+	.hour {
+		font-size: 1.5em;
+		padding-bottom: .25em;
+	}
+	.wrapper {
+		position: relative;
+		top: 1000px;
+		background-color: rgba(0,0,0,.95);
+		/*z-index: 9999;*/
+	}
+	.wrapper2 {
+		position: relative;
+		top: 1000px;
+		height: 1000px;
+	}
+	.name {
+		position:inherit;
+		width: 50%;
+		left: 50%;
+		font-size: 2em;
+	}	
+	.pullquote {	
+		width: 100%;
+		margin: 20px 0;
+		padding: 0 0 0 25px;
+		/*float: right;
+		margin: 50px 0;
+		font-size: 3em;
+		text-align: left;
+		padding: 0 50px;*/
+	}	
+}
+</style>
+
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src = "images/logo.png" /></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+<!--    <div id = "one"></div>
+    <div id = "two"></div>
+    <div id = "three"></div>    -->
+
+	      	<div class = "container hidden-md hidden-lg" id = "header_title">
+	      		<img class="img-responsive" src = "images/logo.png" />
+	      		<p><span class = "talks">Talks With</span><br />
+	      		<span class = "comics">The Comics of CC:Stand-Up</span><br />
+	      		<span class = "hour">The Half Hour</span></p>
+	      	</div>   	    	
+	      	<div class = "stretch container visible-md visible-lg" id = "header_title">
+	      		<img class="img-responsive" src = "images/logo.png" />
+	      		<p class = "talks">Talks With</p>
+	      		<p class = "comics">The Comics of CC:Stand-Up</p>
+	      		<p class = "hour">The Half Hour</p>
+		  		<p class = "name"><span class = "red">Jonah</span> Ray</p>
+	      	</div>   	
+	      	<div id = "header_image"></div>	
+
+    <div class="container">      	
+		<div class="row">
+			<div id="main_article" class="col-sm-6 pull-right hidden-md hidden-lg">
+        <!--<h1>Paperweight Talks with Jonah Ray</h1>-->
+<p><em>When Jonah Ray was a teenager, he was obsessed with punk bands. Now, as an up-and-coming comedian, he's brought that same punk rock, do-it-yourself ethos to his career. Jonah is one of the hosts of The Nerdist podcast, which helped pioneer the comedy podcast genre. He also hosts a popular weekly stand-up show in L.A. with Kumail Nanjiani, called The Meltdown, which they recently developed into a television pilot. Paperweight sat down with Jonah in Boston, where he was in town to tape his first Comedy Central special.</em></p>
+<p><strong>Paperweight: Watching the tapings this week, behind the scenes, I noticed that all the comics hang out and watch each other's sets. It really felt like this is the Class of 2013, this year's class of comedians. Does that ring true?</strong></p>
+<p>Yeah, I've heard that about last year. Everyone has this feeling that they were all there together.</p>
+<p><strong>It's definitely a milestone in your comedy career.</strong></p>
+<p>Yeah, it's the first long set I'll have on TV. I really didn't expect it. I submitted kind of on a whim, not thinking that I'd get it. It was really more to satiate my manager who was bugging me. When I saw the lineup of people who got it this year, I was so blown away by how good the list was and then I felt really guilty. Like, these guys are way funnier than me. All the comics on here: like Joe DeRosa, Jared Logan, Baron Vaughn, all these guys are so funny. </p>
+<p>Maybe it's just a weird self-esteem thing. Maybe it's cause I was raised Catholic that I don't feel like that. I'm like "Oh me? Really?" I feel like Taylor Swift, like "All this? Oh man!"</p>
+<p><strong>Taping a TV special is definitely an established path for comedians, but it seems like a lot of what's brought you to prominence is actually the opposite. You've been involved with some of the first and best known podcasts, you produce your own show, it seems like you've very much made your own path.</strong></p>
+<p>I did that just out of growing up and being in punk bands and stuff like that. You don't make an album and wait for someone to put it out, you try and put it out yourself. That's the aesthetic that I wanted to do with comedy. I'm going to just do it myself. Maybe it won't be good, but I'll get better. I put out a 7" record of standup in 2006 and I really shouldn't have. There was no need for it. There was a real uneven supply and demand for that record. </p>
+<p><strong>Based on that, how should someone who wants to do comedy start out? It seems like one way is to wait to get noticed. Or you can put your own stuff out there like you did, and maybe some people will latch on to it.</strong></p>
+<p>Yeah! That reminds me of a story someone told me once about David Cross, where he'd go do a show and a lot of people wouldn't like him but the three people who liked him, REALLY liked him. And they came back and brought friends the next time. That's like being in a band. Everyone makes those comparisons these days, it's like an indie rock thing, it's a rock and roll thing, but that's how that stuff works. That's how Cheech and Chong did it, that's how Steve Martin did it. They would just do these small shows and then they got a fan base. As opposed to the standard thing with most comedy is you just get really good so they give you stuff. And then you're the guy. </p>
+<p><span class = "pullquote visible-xs">But if you're starting, you just have to do it. There's no way around it. That's the worst part.  Like I want to lose weight, the only way to do that is diet and exercise. There's no way around that.</span></p>
+			</div></div></div>
+<img class="img-responsive visible-xs" src = "images/jonahray2.jpeg" />
+<p><span class = "pullquote hidden-xs hidden-md hidden-lg">But if you're starting, you just have to do it. There's no way around it. That's the worst part.  Like I want to lose weight, the only way to do that is diet and exercise. There's no way around that.</span></p>
+		    <div class="container">
+		<div class="row">
+			<div id="main_article" class="col-sm-6 pull-right hidden-md hidden-lg"> <!-- Fix the fact that I have two main_article divs -->
+<p>I used to tell people, move to New York or LA or Chicago, places where you can do standup a lot. I said that until recently, and then I went to Denver and there was a show there called The Grawlix, which is Adam Cayton-Holland, Andrew Orvedahl, and Ben Roy, these three guys who like developed a scene there. And every comic in the country knows who they are. They're selling out shows every month and comics are coming in and they're making money off of this. They just got a deal with Amazon to make a show. They're making money off of comedy and they're just like "I'm doing it in Denver." They made that scene.</p>
+<p>That's what you have to do. You have to make your own scene. You've got to find your group or your venue and then just do it and do it and do it. And it'll suck for a long time. But, you know, it has to.</p>
+<p>You just gotta do it. It's funny sometimes people will email me and they'll be like "Hey I've been thinking about doing standup, I have about a half-hour's worth of material" and I always want to tell them, you don't. You'll see once you're up there. You know, there's dancing and singing in your car and then there's actually doing it in front of people. It's a completely different muscle that you have to learn and there's no way around it.</p>
+<p><strong>I'm curious about the economics of doing stuff that you love that's yours versus the traditional path. Is that becoming something that's financially viable?</strong></p>
+<p>It can get really confusing, in comedy especially, because you really start mixing up success with fame. Ultimately it's all about the process, it's never about the end result. When I started, I was always like when this happens, that's when I will be there. You forget that that's not how life works. Life is day-to-day. You still have to spend that time between the bullet points. It's not like a comic book where you just jump to all the interesting parts. You have no control over it. But you do have control over what you do day-to-day. That's the stuff I started thinking about when I turned 30. </p>
+<p>The big thing is that just doing it is the success. It might not be a lot of money, but just doing it is a success. </p>
+<!--<p><img class="inline_screenshot_right" src="http://paperweightmagazine.com/sites/default/files/jonah_iphone.png" /></p>-->
+<p><strong>That really rings true. Just the ability to do what you love and pay the bills, that in and of itself is amazing.</strong></p>
+<p>Yes! One time I was talking to someone about the Nerdist podcast and they asked who someone that I would really want to have on is and I said, "Ian MacKaye" and they were like "Who's that?" </p>
+<p>I said, "You know, he was in Minor Threat, Fugazi, he runs Dischord Records, he's basically like one of my idols." </p>
+<p>They were like "Oh I've never heard of him." </p>
+<p>I thought, Ian MacKaye, who does this stuff in Washington, D.C. that changed my life and I worship, means nothing to this guy. I have to explain who he even is. Then you realize that you can't say that Fugazi wasn't a successful band. </p>
+<p>It's important to keep this stuff all in perspective and to analogous versions to comedy. Like I'm making a living. If I was a band, I'd be happy. This would be huge! People buy my records, I show up on the charts for a little bit. People pay attention to me and seem to respond, the kind of people that are fans of mine are like the kind of people that I wouldn't mind being friends with. You can't get better than that. It's very important to keep that in perspective. If you don't, you're just going to be sad and you're always going to feel like you're missing out, you know? For some people, fame is just the party that they're missing out on and they're never going to get there.</p>
+<p><strong>It's interesting, even in this short conversation, you definitely seem like one of the more grounded comics that I've met. Sometimes you meet someone and you're like, that guy is hilarious but I don't want to spend any time with you alone because you are self-destructive and crazy.</strong></p>
+<p>And I have those moments too. I like drinking to excess. I like eating crappy food. You know like, I'm CRAZY, I'll eat a CHEESEBURGER! </p>
+<p>It's like, I constantly have to remember to also be a human being. If I just never stopped and dove in only to art and comedy then maybe I'd never look around and tell my fiancé that I love her. I'd be too wrapped up in my own shit to say like "Hey let's just have a night in or order food."</p>
+<p><strong>Do you have an end goal in comedy?</strong></p>
+<p>I wouldn't mind getting to a place where I get to just do what I want to do and I can maybe own a house and not worry about getting the next job. </p>
+<p>To me though, I can't think of an end goal, because you know, say that you get the show. Even then, it's not on forever. The goal is to be able to just keep on going. </p>
+<p>But yeah, to break it down, the goal is a billion dollars. </p>
+			</div>
+		</div>
+      <!--</div>-->
+
+    </div><!-- /.container -->
+    
+    <div class = "wrapper">
+    <div id = "waypoint" class="container hidden-xs hidden-sm slide1">      	
+		<div class="row">
+			<div id="main_article" class = "col-md-10 col-md-offset-1">
+        <!--<h1>Paperweight Talks with Jonah Ray</h1>-->
+<p><em>When Jonah Ray was a teenager, he was obsessed with punk bands. Now, as an up-and-coming comedian, he's brought that same punk rock, do-it-yourself ethos to his career. Jonah is one of the hosts of The Nerdist podcast, which helped pioneer the comedy podcast genre. He also hosts a popular weekly stand-up show in L.A. with Kumail Nanjiani, called The Meltdown, which they recently developed into a television pilot. Paperweight sat down with Jonah in Boston, where he was in town to tape his first Comedy Central special.</em></p>
+<p><strong>Paperweight: Watching the tapings this week, behind the scenes, I noticed that all the comics hang out and watch each other's sets. It really felt like this is the Class of 2013, this year's class of comedians. Does that ring true?</strong></p>
+<p>Yeah, I've heard that about last year. Everyone has this feeling that they were all there together.</p>
+<p><strong>It's definitely a milestone in your comedy career.</strong></p>
+<p>Yeah, it's the first long set I'll have on TV. I really didn't expect it. I submitted kind of on a whim, not thinking that I'd get it. It was really more to satiate my manager who was bugging me. When I saw the lineup of people who got it this year, I was so blown away by how good the list was and then I felt really guilty. Like, these guys are way funnier than me. All the comics on here: like Joe DeRosa, Jared Logan, Baron Vaughn, all these guys are so funny. </p>
+<p>Maybe it's just a weird self-esteem thing. Maybe it's cause I was raised Catholic that I don't feel like that. I'm like "Oh me? Really?" I feel like Taylor Swift, like "All this? Oh man!"</p>
+<p><strong>Taping a TV special is definitely an established path for comedians, but it seems like a lot of what's brought you to prominence is actually the opposite. You've been involved with some of the first and best known podcasts, you produce your own show, it seems like you've very much made your own path.</strong></p>
+<p>I did that just out of growing up and being in punk bands and stuff like that. You don't make an album and wait for someone to put it out, you try and put it out yourself. That's the aesthetic that I wanted to do with comedy. I'm going to just do it myself. Maybe it won't be good, but I'll get better. I put out a 7" record of standup in 2006 and I really shouldn't have. There was no need for it. There was a real uneven supply and demand for that record. </p>
+<p><strong>Based on that, how should someone who wants to do comedy start out? It seems like one way is to wait to get noticed. Or you can put your own stuff out there like you did, and maybe some people will latch on to it.</strong></p>
+<p>Yeah! That reminds me of a story someone told me once about David Cross, where he'd go do a show and a lot of people wouldn't like him but the three people who liked him, REALLY liked him. And they came back and brought friends the next time. That's like being in a band. Everyone makes those comparisons these days, it's like an indie rock thing, it's a rock and roll thing, but that's how that stuff works. That's how Cheech and Chong did it, that's how Steve Martin did it. They would just do these small shows and then they got a fan base. As opposed to the standard thing with most comedy is you just get really good so they give you stuff. And then you're the guy. </p>
+			</div></div>
+		<div class="row">
+			<div class = "col-md-5 col-md-offset-1">
+<img class="img-responsive hidden-xs hidden-sm" src = "images/jonahray2.jpeg" /></div>
+			<div class = "col-md-5">
+<p><span class = "pullquote hidden-xs hidden-sm">But if you're starting, you just have to do it. There's no way around it. That's the worst part.  Like I want to lose weight, the only way to do that is diet and exercise. There's no way around that.</span></p>
+			</div>
+		<div class="row">
+			<div id="main_article" class = "col-md-10 col-md-offset-1">
+        <!--<h1>Paperweight Talks with Jonah Ray</h1>-->
+<p>I used to tell people, move to New York or LA or Chicago, places where you can do standup a lot. I said that until recently, and then I went to Denver and there was a show there called The Grawlix, which is Adam Cayton-Holland, Andrew Orvedahl, and Ben Roy, these three guys who like developed a scene there. And every comic in the country knows who they are. They're selling out shows every month and comics are coming in and they're making money off of this. They just got a deal with Amazon to make a show. They're making money off of comedy and they're just like "I'm doing it in Denver." They made that scene.</p>
+<p>That's what you have to do. You have to make your own scene. You've got to find your group or your venue and then just do it and do it and do it. And it'll suck for a long time. But, you know, it has to.</p>
+<p>You just gotta do it. It's funny sometimes people will email me and they'll be like "Hey I've been thinking about doing standup, I have about a half-hour's worth of material" and I always want to tell them, you don't. You'll see once you're up there. You know, there's dancing and singing in your car and then there's actually doing it in front of people. It's a completely different muscle that you have to learn and there's no way around it.</p>
+<p><strong>I'm curious about the economics of doing stuff that you love that's yours versus the traditional path. Is that becoming something that's financially viable?</strong></p>
+<p>It can get really confusing, in comedy especially, because you really start mixing up success with fame. Ultimately it's all about the process, it's never about the end result. When I started, I was always like when this happens, that's when I will be there. You forget that that's not how life works. Life is day-to-day. You still have to spend that time between the bullet points. It's not like a comic book where you just jump to all the interesting parts. You have no control over it. But you do have control over what you do day-to-day. That's the stuff I started thinking about when I turned 30. </p>
+<p>The big thing is that just doing it is the success. It might not be a lot of money, but just doing it is a success. </p>
+<!--<p><img class="inline_screenshot_right" src="http://paperweightmagazine.com/sites/default/files/jonah_iphone.png" /></p>-->
+<p><strong>That really rings true. Just the ability to do what you love and pay the bills, that in and of itself is amazing.</strong></p>
+<p>Yes! One time I was talking to someone about the Nerdist podcast and they asked who someone that I would really want to have on is and I said, "Ian MacKaye" and they were like "Who's that?" </p>
+<p>I said, "You know, he was in Minor Threat, Fugazi, he runs Dischord Records, he's basically like one of my idols." </p>
+<p>They were like "Oh I've never heard of him." </p>
+<p>I thought, Ian MacKaye, who does this stuff in Washington, D.C. that changed my life and I worship, means nothing to this guy. I have to explain who he even is. Then you realize that you can't say that Fugazi wasn't a successful band. </p>
+<p>It's important to keep this stuff all in perspective and to analogous versions to comedy. Like I'm making a living. If I was a band, I'd be happy. This would be huge! People buy my records, I show up on the charts for a little bit. People pay attention to me and seem to respond, the kind of people that are fans of mine are like the kind of people that I wouldn't mind being friends with. You can't get better than that. It's very important to keep that in perspective. If you don't, you're just going to be sad and you're always going to feel like you're missing out, you know? For some people, fame is just the party that they're missing out on and they're never going to get there.</p>
+<p><strong>It's interesting, even in this short conversation, you definitely seem like one of the more grounded comics that I've met. Sometimes you meet someone and you're like, that guy is hilarious but I don't want to spend any time with you alone because you are self-destructive and crazy.</strong></p>
+<p>And I have those moments too. I like drinking to excess. I like eating crappy food. You know like, I'm CRAZY, I'll eat a CHEESEBURGER! </p>
+<p>It's like, I constantly have to remember to also be a human being. If I just never stopped and dove in only to art and comedy then maybe I'd never look around and tell my fiancé that I love her. I'd be too wrapped up in my own shit to say like "Hey let's just have a night in or order food."</p>
+<p><strong>Do you have an end goal in comedy?</strong></p>
+<p>I wouldn't mind getting to a place where I get to just do what I want to do and I can maybe own a house and not worry about getting the next job. </p>
+<p>To me though, I can't think of an end goal, because you know, say that you get the show. Even then, it's not on forever. The goal is to be able to just keep on going. </p>
+<p>But yeah, to break it down, the goal is a billion dollars. </p>
+			</div></div>			
+			</div>
+    </div><!--/.wrapper-->    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/waypoints.js" type="text/javascript"></script>
+	<script>
+	  jQuery(".stretch").fitText();
+	  $(function() {                     // When the page has loaded,
+		  $('#two').waypoint(               // create a waypoint
+		  	function() {
+			  alert("Waypoint reached.");
+			}
+		)
+	});
+	</script>
+  </body>
+</html>
