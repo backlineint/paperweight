@@ -44,7 +44,7 @@ body.navbar-is-fixed-top.node-type-interview-with-cover {
 #header_title img {
 	margin-left: auto;
 	margin-right: auto;
-	width:250px; 
+	width:250px;
 }
 #header_title p {
 	text-align: center;
@@ -93,14 +93,14 @@ body.navbar-is-fixed-top.node-type-interview-with-cover {
 	font-size: 2.5em;
 	top: 9%;
 	line-height: 1.2em;
-}	
+}
 hr { /* Should remove HR from markup and apply spacing to text div. */
 	border: 0 !important; /* Get rid of all of these !important rules */
 	height: 0px !important;
 }
 hr.show_header {
 	margin-top: 360px;
-	margin-bottom: 0;	
+	margin-bottom: 0;
 }
 .field-name-field-pullquote p {
 	text-align: center;
@@ -116,7 +116,7 @@ hr.show_header {
 .field-name-field-inline-image img {
 	display: block;
 	max-width: 100%;
-	height: auto;	
+	height: auto;
 	margin-bottom: 1em;
 }
 
@@ -141,32 +141,32 @@ hr.show_header {
 		position: relative;
 		left: 0;
 		top: 15%;
-	}	
-	
+	}
+
 	hr.show_header {
 		margin-top: 0px;
 	}
 	#header_title p {
 		margin: 0;
-	}	
+	}
 	.talks {
 		font-size: .6em;
 	}
 	.comics {
-		font-size: .8em;	
+		font-size: .8em;
 	}
 	.hour {
 		font-size: 1.5em;
 		padding-bottom: .25em;
-	}	
+	}
 	#name {
 		position:inherit;
 		width: 50%;
 		left: 50%;
 		font-size: 2em;
 		top: auto;
-	}	
+	}
 	.field-name-field-pullquote p {
-		font-size: 3.5em;
-	}	
+		/*font-size: 3.5em;*/
+	}
 }
