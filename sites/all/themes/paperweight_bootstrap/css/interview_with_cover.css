@@ -1,0 +1,172 @@
+/**
+* @file
+* General slide up with image style
+*/
+
+@import url("http://fonts.googleapis.com/css?family=Oswald:300,400,700|Open+Sans:300italic,600,400,300");
+
+body {
+	background-color: #262626;
+}
+.wrapper {
+	background-color: #262626 !important;
+	padding-bottom: 20px;
+}
+p {
+	color: white;
+}
+.wrapper p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.25em;
+}
+em { /* Should we really be using em in the markup here? */
+	font-weight: 600;
+	font-style: normal;
+}
+h1 {
+	color: rgba(255,0,0,0.95);
+}
+.italic {
+	font-style: italic;
+}
+body.navbar-is-fixed-top.node-type-interview-with-cover {
+	padding-top: 50px !important;
+}
+#header_title {
+	background-color: rgba(235,73,91,0.95);
+	height: 150px;
+	width: 100%;
+	position: fixed;
+	padding-top: 12px;
+	z-index: -1;
+}
+#header_title img {
+	margin-left: auto;
+	margin-right: auto;
+	width:250px;
+}
+#header_title p {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.talks {
+	color: black;
+}
+.comics {
+	font-size: 1.5em;
+}
+.hour {
+	font-size: 2.82em;
+	line-height: 1em;
+}
+.red {
+	color: rgba(235,73,91,0.95);
+}
+.field-name-field-header-image img {
+	display: none;
+}
+.header_image {
+	background-size: cover !important;
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+	/*height: 300px !important;*/
+	top: 200px;
+}
+.header_image p {
+	margin: 0;
+}
+.header_image p {
+	/*text-align: center;*/
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+/*.interview_name { */
+#name {
+	position:relative;
+	/*width: 50%;*/
+	left: 57%;
+	font-size: 2.5em;
+	top: 9%;
+	line-height: 1.2em;
+}
+hr { /* Should remove HR from markup and apply spacing to text div. */
+	border: 0 !important; /* Get rid of all of these !important rules */
+	height: 0px !important;
+}
+hr.show_header {
+	margin-top: 360px;
+	margin-bottom: 0;
+}
+.field-name-field-pullquote p {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.85em;
+	font-style: italic;
+	color: red;
+	text-shadow: 1px 1px 1px white;
+	margin-top: .5em;
+	margin-bottom: .75em !important;
+}
+.field-name-field-inline-image img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 1em;
+}
+
+@media (min-width: 768px) { /* Convert to LESS */
+	#header_title {
+		width: 50%;
+		margin-left: 50%;
+		height: auto;
+		top: 15%;
+	}
+	#header_title img {
+		width:470px;
+	}
+	.header_image {
+		top: 50px;
+		z-index: -2;
+	}
+	.field-name-field-header-image, .header_image {
+		height: 600px !important;
+	}
+	#name {
+		position: relative;
+		left: 0;
+		top: 15%;
+	}
+
+	hr.show_header {
+		margin-top: 0px;
+	}
+	#header_title p {
+		margin: 0;
+	}
+	.talks {
+		font-size: .6em;
+	}
+	.comics {
+		font-size: .8em;
+	}
+	.hour {
+		font-size: 1.5em;
+		padding-bottom: .25em;
+	}
+	#name {
+		position:inherit;
+		width: 50%;
+		left: 50%;
+		font-size: 2em;
+		top: auto;
+	}
+	.field-name-field-pullquote p {
+		font-size: 3.5em;
+	}
+}

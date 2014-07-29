@@ -1,7 +1,7 @@
 <?php drupal_add_js(drupal_get_path('theme', 'paperweight_bootstrap') . '/js/slide_up_with_image.js'); // Change the name of JS to be more generic ?>
 <?php drupal_add_js(drupal_get_path('theme', 'paperweight_bootstrap') . '/js/jquery.fittext.js'); ?>
 <?php drupal_add_js(drupal_get_path('theme', 'paperweight_bootstrap') . '/js/interview_with_cover.js'); ?>
-<?php //drupal_add_css(drupal_get_path('theme', 'paperweight_bootstrap') . '/css/slide_up_with_image.css'); ?>
+<?php drupal_add_css(drupal_get_path('theme', 'paperweight_bootstrap') . '/css/interview_with_cover.css'); ?>
 
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="container">
@@ -53,9 +53,9 @@
 		      <?php if (isset($node_content) && $node_content['field_name']): ?>
 			      <div id = "name">
 			      <?php print render($node_content['field_name']); ?>
-			      </div>	      
+			      </div>
 			  <?php endif; ?>
-	      	</div>   	
+	      	</div>
 
       <?php if (isset($node_content) && $node_content['field_header_image']): ?>
 	      <?php print render($node_content['field_header_image']); ?>
