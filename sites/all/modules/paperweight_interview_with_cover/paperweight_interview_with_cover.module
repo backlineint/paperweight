@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Paperweight Interview With Cover feature.
+ */
+
+include_once 'paperweight_interview_with_cover.features.inc';
